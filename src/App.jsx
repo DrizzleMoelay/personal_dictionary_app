@@ -5,6 +5,7 @@ import { MemorizationText } from "./components/MemorizationText";
 import { NewvocabText } from "./components/NewvocabText";
 
 export const App = () => {
+  const [memorizationText, setMemorizationText] = useState(["aaa"]);
   return (
     <>
       <div>
@@ -15,6 +16,9 @@ export const App = () => {
       <div>
         <p>新語彙</p>
         <ul>
+          {memorizationText.map(()=>{
+            return ();
+          })}
           <div>
             <li>aaa</li>
             <button>暗記済</button>
